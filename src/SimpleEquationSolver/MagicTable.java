@@ -65,7 +65,7 @@ public class MagicTable {
 
 
             // If _table[2][counter+1] is now equal to 1, quit and make the array stop at that number.
-            if (_table[2][counter+1] == 1) {
+            if (_table[2][counter] % _table[2][counter+1] == 0) {
                 _table = extend(_table, -(_table[0].length - counter - 2));
                 break;
             }

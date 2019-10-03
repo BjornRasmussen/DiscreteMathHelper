@@ -12,7 +12,11 @@ public class SimpleTableExpander {
         System.out.println("Now enter B:");
         long b = input.nextLong();
         input.close();
+
+
         MagicTable table = new MagicTable(a, b);
+
+
         printTable(table);
     }
 
