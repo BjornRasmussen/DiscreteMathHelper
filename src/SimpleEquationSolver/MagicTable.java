@@ -82,6 +82,9 @@ public class MagicTable {
             _table[1][i] = _table[1][i-2] - (_table[1][i-1] * _table[3][i-1]);
 
         }
+
+        // Now, fill in that one last square in the very bottom right:
+        _table[3][_table[0].length-1] = _table[2][_table[0].length-2] / _table[2][_table[0].length-1];
     }
 
     private static long[][] extend(long[][] table, int amount) {
